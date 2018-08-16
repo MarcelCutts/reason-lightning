@@ -70,7 +70,9 @@ const images = {
   artist: require("./assets/artist.png"),
   festival: require("./assets/festival.png"),
   prod: require("./assets/prod.png"),
-  btwitter: require("./assets/btwitter.png")
+  btwitter: require("./assets/btwitter.png"),
+  nested: require("./assets/nested.png"),
+  elixir: require("./assets/elixir.png")
 };
 
 // Hellop
@@ -659,6 +661,20 @@ export default class Presentation extends React.Component {
             THANKS!
           </Heading>
           <Image src={images.btwitter} margin="40px 0 0 0" />
+        </Slide>
+
+        <Slide transition={["slide"]} bgColor="primary">
+          <Layout>
+            <Fill>
+              <Image src={images.nested} height="300px" />
+            </Fill>
+            <Fill>
+              <Image src={images.elixir} height="300px" />
+            </Fill>
+            <Fill>
+              <Image src={images.reasonml} height="300px" />
+            </Fill>
+          </Layout>
         </Slide>
       </Deck>
     );
